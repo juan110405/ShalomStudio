@@ -1,0 +1,198 @@
+/* Pantalla de carga */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #ff0000, #ff0000, #ff0000);
+    animation: backgroundFlow 80s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader img {
+    width: 120px;
+    animation: fadeIn 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Configuración general */
+body {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(270deg, #000000, #000000, #000000);
+    background-size: 400% 400%;
+    animation: backgroundFlow 80s infinite ease-in-out;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo-link img {
+    width: 45px;
+}
+
+.logo-link img:hover {
+    filter: hue-rotate(90deg); /* Cambia el matiz */
+}
+.logo-link img:hover {
+    filter: brightness(1.5); /* Ilumina el logo */
+    transform: scale(1.1); /* Lo agranda ligeramente */
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #d6d4d4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+.nav-menu li a:hover {
+    color: #ffffff;
+}
+.additional-logo {
+    position: absolute;
+    top: 20px; /* Puedes ajustar este valor para moverlo verticalmente */
+    right: 20px; /* Puedes ajustar este valor para moverlo horizontalmente */
+}
+
+.additional-logo-img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo del fondo (para consistencia en las dos secciones) */
+.shared-background {
+    background: linear-gradient(270deg, #ff0000, #ffffff, #ff0000);
+    background-size: 200% 200%; /* Tamaño sincronizado para ambas secciones */
+    animation: backgroundFlow 60s infinite ease-in-out; /* Animación sincronizada */
+}
+
+/* Fondo general del cuerpo */
+body {
+    background: linear-gradient(270deg, #ff0000, #ffffff, #ff0000);
+    background-size: 200% 200%; /* Ajustar el gradiente */
+    animation: backgroundFlow 60s infinite ease-in-out; /* Animación fluida */
+    margin: 0; /* Quitar espacios del body */
+    font-family: "Poppins", serif;
+}
+
+/* Sección: Presentación */
+.presentacion {
+    text-align: center;
+    padding: 100px 20px; /* Espaciado interno */
+    margin: 0 auto; /* Centrado horizontal */
+}
+.presentacion-texto {
+    max-width: 800px; /* Ancho máximo */
+    text-align: left; /* Alineación del texto */
+    margin: 0 auto; /* Centrar la caja */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+      
+}
+
+.presentacion-titulo {
+    font-size: 2.5rem;
+    color: #000000; /* Texto negro */
+}
+
+/* Sección: Introducción */
+.intro {
+    display: flex;
+    align-items: center; /* Alinear al centro verticalmente */
+    justify-content: center; /* Centrar contenido horizontal */
+    flex-wrap: wrap;
+    padding: 100px 20px; /* Espaciado interno */
+    margin: 50px auto; /* Margen entre secciones */
+}
+
+.intro-text {
+    max-width: 50%;
+    margin: 0 20px; /* Espaciado lateral */
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #000000;
+}
+
+.intro-media {
+    max-width: 500px;
+    margin: 0 20px; /* Espaciado lateral */
+}
+
+.intro-media video {
+    width: 100%; /* Ancho completo del contenedor */
+    border: 1px solid #000000;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Animación para el gradiente */
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Footer */
+.footer {
+    background: linear-gradient(270deg, #000000, #000000, #000000);
+    animation: backgroundFlow 80s infinite ease-in-out;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}

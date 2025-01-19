@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bluemus - Página de Detalles">
+    <title>Bluemus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bluemus css.css"> <!-- Reutiliza el CSS existente -->
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loader">
+        <img src="https://i.ibb.co/B2h900g/5-removebg-preview.png" alt="5-removebg-preview" alt="Cargando ShalomStudio">
+    </div>
+
+      <!-- Header -->
+      <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="https://i.ibb.co/B2h900g/5-removebg-preview.png" alt="5-removebg-preview" alt="Logo ShalomStudio" class="logo">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Casos de Éxito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+      <!-- Presentación -->
+<section class="presentacion">
+    <div class="presentacion-texto">
+        <h1 class="presentacion-titulo">Bluemus</h1>
+    </div>
+    <div class="presentacion-imagen">
+        <img src="https://i.ibb.co/xLdBqRF/Logobluemusoficial-removebg-preview.png" alt="Logo Bluemus" class="presentacion-logo">
+    </div>
+</section>
+
+
+     <!-- Introducción -->
+<section class="intro">
+    <a href="bluemus.html" class="intro-link">
+        <img src="https://i.ibb.co/KXQGyjk/Logobluemusoficial-removebg-preview.png" alt="Logo Bluemus" class="intro-logo">
+    </a>
+    <a href="velazquezcutz.html" class="intro-link">
+        <img src="https://i.ibb.co/KNfncsL/velazquezcutz-removebg-preview.png" alt="VelazquezCutz" class="intro-logo">
+    </a>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ShalomStudio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 1s ease';
+                setTimeout(() => loader.style.display = 'none', 1000);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

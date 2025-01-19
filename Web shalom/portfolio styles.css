@@ -1,0 +1,170 @@
+/* Pantalla de carga */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #ff0000, #ff0000, #ff0000);
+    animation: backgroundFlow 80s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader img {
+    width: 120px;
+    animation: fadeIn 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Configuración general */
+body {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(270deg, #000000, #000000, #000000);
+    background-size: 400% 400%;
+    animation: backgroundFlow 80s infinite ease-in-out;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo-link img {
+    width: 45px;
+}
+
+.logo-link img:hover {
+    filter: hue-rotate(90deg); /* Cambia el matiz */
+}
+.logo-link img:hover {
+    filter: brightness(1.5); /* Ilumina el logo */
+    transform: scale(1.1); /* Lo agranda ligeramente */
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #d6d4d4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+.nav-menu li a:hover {
+    color: #ffffff;
+}
+/* Presentación */
+.presentacion {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(270deg, #ff0000, #ffffff, #ff0000);
+    background-size: 400% 400%;
+    animation: backgroundFlow 80s infinite ease-in-out;
+}
+
+.presentacion-titulo {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    color: #000000; /* Color del título */
+    margin-bottom: 35px; /* Espaciado debajo del título */
+}
+
+.presentacion-descripcion {
+    font-size: 4.8rem; /* Tamaño del texto */
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: small;
+    color: #000000; /* Color del texto principal */
+    line-height: 1.8; /* Espaciado entre líneas */
+    margin: 0 auto; /* Centrar el texto */
+    max-width: 800px; /* Ancho máximo del contenedor */
+}
+
+.presentacion-descripcion .resaltado {
+    color: red; /* Resalta la palabra en rojo */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    filter: brightness(1.2); /* Aumenta el brillo del color */
+}
+
+/* Introducción */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las imágenes */
+    padding: 80px 20px;
+    background: linear-gradient(270deg, #ff0000, #ffffff, #ff0000);
+    background-size: 400% 400%;
+    animation: backgroundFlow 80s infinite ease-in-out;
+}
+
+.intro-logo {
+    max-width: 200px; /* Tamaño de las imágenes (cámbialo a gusto) */
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Efectos suaves */
+    border-radius: 10px; /* Esquinas redondeadas */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.intro-logo:hover {
+    transform: scale(1.2); /* Agranda la imagen al pasar el cursor */
+    filter: brightness(1.2) sepia(0.2); /* Cambia brillo y color */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra al pasar el cursor */
+}
+
+.intro-link {
+    text-decoration: none; /* Quita subrayado en los enlaces */
+}
+
+/* Para cambiar el fondo dinámicamente (clase adicional si se desea) */
+.dynamic-background {
+    background-color: #f0e6d2; /* Color alternativo para pruebas */
+}
+
+
+
+/* Footer */
+.footer {
+    background: linear-gradient(270deg, #000000, #000000, #000000);
+    animation: backgroundFlow 80s infinite ease-in-out;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
